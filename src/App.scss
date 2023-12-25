@@ -1,0 +1,74 @@
+
+@use "sass:map";
+
+$theme-latte: (
+  ctp-rosewater: #DE9584,
+  ctp-flamingo: #DD7878,
+  ctp-pink: #EC83D0,
+  ctp-mauve: #8839EF,
+  ctp-red: #D20F39,
+  ctp-maroon: #E64553,
+  ctp-peach: #FE640B,
+  ctp-yellow: #E49320,
+  ctp-green: #40A02B,
+  ctp-teal: #179299,
+  ctp-sky: #04A5E5,
+  ctp-sapphire: #209FB5,
+  ctp-blue: #2A6EF5,
+  ctp-lavender: #7287FD,
+  ctp-text: #4C4F69,
+  ctp-subtext1: #5C5F77,
+  ctp-subtext0: #6C6F85,
+  ctp-overlay2: #7C7F93,
+  ctp-overlay1: #8C8FA1,
+  ctp-overlay0: #9CA0B0,
+  ctp-surface2: #ACB0BE,
+  ctp-surface1: #BCC0CC,
+  ctp-surface0: #CCD0DA,
+  ctp-base: #EFF1F5,
+  ctp-mantle: #E6E9EF,
+  ctp-crust: #DCE0E8,
+  theme-mode: "light",
+  theme-name: "latte",
+);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: map.get($theme-latte, "ctp-rosewater");
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 9rem;
+  line-height: 8rem;
+  text-shadow: 2px 5px  map.get($theme-latte, "ctp-rosewater");
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+header {
+  margin: 1vw;
+}
+
+.app {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  width: 45vw;
+  height: 90vh;
+  color: white;
+  background-color: map.get($theme-latte, "ctp-flamingo");
+  border-radius: 1vw;
+  box-shadow: 3px 3px 0px 10px  rgba(0, 0, 0, 0.6);
+}

@@ -1,23 +1,16 @@
 import logo from './logo.svg';
-import './App.css';
+import './App.scss';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="app">
+      <header>
+      <h1>Conor McDevitt</h1>
+      <div className='about'>
+        <p>Hello there! 👋 I'm Conor, a passionate and detail-oriented web developer with a love for creating clean and functional websites. I thrive on turning ideas into reality through code and design.</p>
+      </div>
       </header>
+      
     </div>
   );
 }
