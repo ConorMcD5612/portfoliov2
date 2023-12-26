@@ -57,17 +57,46 @@ p {
 }
 
 header {
-  margin: 1vw;
+  padding: 1vw;
+  color: white;
+  background-color: map.get($theme-latte, "ctp-flamingo");
+  border-radius: 1vw;
+  box-shadow: 3px 3px 0px 10px  rgba(0, 0, 0, 0.6);
 }
 
 .app {
+  display: flex;
   position: absolute;
+  gap: 2vw;
   top: 50%;
-  left: 25%;
+  left: 50%;
   transform: translate(-50%, -50%);
-  width: 45vw;
-  height: 90vh;
-  color: white;
+  width: 95vw;
+  height: 95vh;
+
+}
+
+.icons {
+  display: flex;
+  gap: 1vw;
+  margin-top: 1vw;
+  width: 20%;
+}
+
+
+.box-container {
+  width: 55%;
+}
+
+
+.intro-container {
+  align-self: end;
+  width: 45%;
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
   background-color: map.get($theme-latte, "ctp-flamingo");
   border-radius: 1vw;
   box-shadow: 3px 3px 0px 10px  rgba(0, 0, 0, 0.6);
